@@ -1,0 +1,10 @@
+Git Course Udemy: https://www.udemy.com/share/101tpK3@ktnil1NcDHhVFYjPoM9TFhm0nvyJOG1YO9N_MDlg6spOLKRODNx2C0J5CFIkqz0_yA==/
+Git Cheat commands: 
+	https://github.com/joshnh/Git-Commands
+	https://education.github.com/git-cheat-sheet-education.pdf
+	https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
+
+Programming languages by popularity:
+	https://www.tiobe.com/tiobe-index/
+	https://survey.stackoverflow.co/2025/developers/
+	https://www.index.dev/blog/most-popular-programming-languages-
