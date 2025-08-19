@@ -9,6 +9,7 @@ Programming languages by popularity:
 	https://survey.stackoverflow.co/2025/developers/
 	https://www.index.dev/blog/most-popular-programming-languages-
 Data for MF Project:
-	https://api.mfapi.in/mf
+	https://api.mfapi.in/mf - to get all the codes for listed Mutual funds.
+	https://api.mfapi.in/mf/100027 - to get all the historical data for the given fund code, see above call to get the fund code.
 	https://portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?mf=62&frmdt=01-Jan-1990&todt=05-Aug-2025
 	Check folder AMFI for the CURL file, rename the DownloadMF_data.txt file to DownloadMF_data.bat for windows to download the data in your downloads folder. Also the MF codes file is available for easy reference.
