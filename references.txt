@@ -9,7 +9,64 @@ Programming languages by popularity:
 	https://survey.stackoverflow.co/2025/developers/
 	https://www.index.dev/blog/most-popular-programming-languages-
 Data for MF Project:
-	https://api.mfapi.in/mf - to get all the codes for listed Mutual funds.
+	https://api.mfapi.in/mf - to get all the codes for listed Mutual funds. For CURL---> use: curl -o "C:\Users\Primary\Downloads\Mutual_Fund\Data\apimfapii" "https://api.mfapi.in/mf" and then parse through the language JSON library.
 	https://api.mfapi.in/mf/100027 - to get all the historical data for the given fund code, see above call to get the fund code.
 	https://portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?mf=62&frmdt=01-Jan-1990&todt=05-Aug-2025
 	Check folder AMFI for the CURL file, rename the DownloadMF_data.txt file to DownloadMF_data.bat for windows to download the data in your downloads folder. Also the MF codes file is available for easy reference.
+
+To verify the JSON, use this website: https://jsonlint.com/
+More about JSON: https://www.json.org/json-en.html
+
+
+
+
+
+
+
+DB Notes:
+connecting to DB:
+2 ways:
+1) using commandline: run Psql and supply the user name and password, leave the rest as it is.
+2) start pgadmin 4 app - this is the user interface based windows app.
+
+To change password: use the following command
+\password : and specify the new password.
+
+for my instance:
+leave everything empty and for password specify : password; the username is postgres.
+
+
+
+select datname from pg_database; - to fetch the databases in the DB.
+the queries are not case sensitive but advised to use upper case. Until a ; is not used the query is not executed and query can be multi line.
+
+command line for my DB
+LISTING ALL THE DB'S IN POSTGRES.
+1) select datname from pg_database;
+2) ON THE COMMAND LINE JUST "\L" ALSO PROVIDES THE LIST OF DATABASES THAT EXIT IN THE SYSTEM.
+
+CREATING A DATABASE:
+1) CREATE DATABASE <DATABASE NAME>
+
+
+TO CONNECT TO A SPECIFIC db FROM COMMAND LINE USE THE FOLLOWING
+1)\C <DB NAME>
+
+
+
+CREATE TABLE:
+1) CREATE TABLE <TABLE_NAME> ( FIELD NAME, FIELD TYPE,.......);
+
+INSERT INTO TABLE:
+1) INSERT INTO <TABLE_NAME> (COLUMN NAMES) VALUES (VALUES), (VALUES),...CAN BE MULTIPLE VALUES; - COLUMN NAMES CAN BE SKIPPED IF WE ARE PROVIDING ALL THE FIELDS.
+
+
+READ FROM TABLE:
+1) SELECT * FROM TABLE - TO READ ALL RECORDS.
+2) SELECT <SPECIFIC COLUMN NAME/S>{COLUMN NAME 1, COLUMN NAME 2) FROM TABLE TO READ SPECIFIC FIELDS.
+
+UPDATE TABLE:
+1) UPDATE <TABLE NAME> SET <FIELD NAME> = '<NEW VALUE>' WHERE  <FIELD NAME> = FIELD VALUE; 
+
+DELETE FROM TABLE:
+1) DELETE FROM <TABLE NAME> WHERE FIELD ID = FIELD VALUE;
