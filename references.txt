@@ -9,13 +9,31 @@ Programming languages by popularity:
 	https://survey.stackoverflow.co/2025/developers/
 	https://www.index.dev/blog/most-popular-programming-languages-
 Data for MF Project:
-	https://api.mfapi.in/mf - to get all the codes for listed Mutual funds. For CURL---> use: curl -o "C:\Users\Primary\Downloads\Mutual_Fund\Data\apimfapii" "https://api.mfapi.in/mf" and then parse through the language JSON library.
-	https://api.mfapi.in/mf/100027 - to get all the historical data for the given fund code, see above call to get the fund code.
-	https://portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?mf=62&frmdt=01-Jan-1990&todt=05-Aug-2025
-	Check folder AMFI for the CURL file, rename the DownloadMF_data.txt file to DownloadMF_data.bat for windows to download the data in your downloads folder. Also the MF codes file is available for easy reference.
+	Approach#1:
+		https://api.mfapi.in/mf - to get all the codes for listed Mutual funds. For CURL---> use: curl -o "C:\Users\Primary\Downloads\Mutual_Fund		\Data\apimfapii" "https://api.mfapi.in/mf" and then parse through the language JSON library.
+		https://api.mfapi.in/mf/100027 - to get all the historical data for the given fund code, see above call to get the fund code.
+		If you want to use apimfapi for getting the MF codes and scheme NAV then use this "Data\AMFI\Download_apimfapi.txt" file, you will have to 		rename this file to .bat extension and run on a command line for Windows. Once this .bat file is run, it will create 37000+ JSON files. Post 		this JSON file creation use Python code files to create the DB  tables (PostGres, create a database by name "projectmf" and other parameters 		as mentioned in python code files). Much of this is self explanatory. 
+
+	Approach#2: Only explored till downloading all the CSV's using the same curl batch file, details below:
+		https://portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?mf=62&frmdt=01-Jan-1990&todt=05-Aug-2025
+		Check folder AMFI for the CURL file, rename the DownloadMF_data.txt file to DownloadMF_data.bat for windows to download the data in your 		folder. This approach is not pursued further. 
 
 To verify the JSON, use this website: https://jsonlint.com/
 More about JSON: https://www.json.org/json-en.html
+
+
+Way to build this project:
+1) DB Setup: Clone the project / Pull the git repo.
+2) Get the JSON Data:  See Approach#1 above
+3) Setup your local IDE. I am using VSCode.
+4) Execution Sequence:
+	a) Execute the file: create_mf_codes_tables.py. This is available under the folder "Python_code\DB\Create"
+	b) Execute the file: pushmfcodes_todb.py. This is available under the folder "Python_code".
+	c) Execute the file: create_mf_schemes_tables.py. This is available under the folder "Python_code\DB\Create". Even if you don't execute 	   	   this file, it should be okay as the specific DB's get created as we populate the NAV's using the next step. This is very time consuming as it 	   creates around 37000 tables in the Postgres.
+	d) Execute the file "pushnav_todb.py". This creates the DB tables for specific schemes (if the tables don't exit) and populates the data (Date and 	   NAV) from the corresponding JSON files.
+	5) TBD: Understanding ngnix and building the front end. Code is dirty, needs modularization and clean up.
+
+
 
 
 
