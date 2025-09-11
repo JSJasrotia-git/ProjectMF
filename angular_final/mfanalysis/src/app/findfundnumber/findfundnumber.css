@@ -1,0 +1,11 @@
+.findfundMain {
+  width: 96.5vw;          
+  margin-top: .1%;    /* Small top margin for spacing */
+  margin-left: .4%;
+  border: 2px solid black;
+  overflow-y: auto;    /* Enable vertical scrollbar when needed */
+  overflow-x: hidden;  /* Prevent horizontal scrollbar */
+  box-sizing: border-box;
+  height: 72.5vh;    /* Match content container height */
+  background: lightgray;
+}

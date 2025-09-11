@@ -1,0 +1,11 @@
+<div class="content">
+  <app-navbar></app-navbar>
+  <button class="buttondisplay" (click)="ChangeComponent()">{{ ButtonTexttoshow }}</button>
+  <!-- Have to add conditional rendering for midleft and midright components -->
+    @if (showmain) {
+      <app-midleft></app-midleft>
+    } @else {
+      <app-findfundnumber></app-findfundnumber>
+    }
+    <app-footer></app-footer>
+</div>

@@ -35,11 +35,18 @@ Way to build this project:
 
 
 
+nginx notes:
+https://www.youtube.com/watch?v=9jZEfW8h5fQ   .....https://github.com/iam-veeramalla/nginx-zero-to-hero
+Can be used as a webserver / reverse proxy, load balancer
 
 
+ISTIO:
+https://www.youtube.com/watch?v=eSNetKBe7Z8
 
 
-
+angular NodeJS, Postgres:
+https://www.youtube.com/watch?v=xjgCkEfUIwE
+Angular 20: https://www.youtube.com/watch?v=UORr9PHUYB0&list=PL_qizAfcpJ-N8kYyBAuF13e3jCqIB0t7q&index=8
 
 DB Notes:
 connecting to DB:
