@@ -1,17 +1,15 @@
-/Data/api_mfapi_in*
-/Python_code/Sample/*
-/ProjectMF/angular_final/mfanalysis/public/*
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
 # Compiled output
-/ProjectMF/angular_final/mfanalysis/dist/*
-/ProjectMF/angular_final/mfanalysis/tmp/*
-/ProjectMF/angular_final/mfanalysis/out-tsc/*
-/ProjectMF/angular_final/mfanalysis/bazel-out/*
-/ProjectMF/angular_final/mfanalysis/public/*
+/dist
+/tmp
+/out-tsc
+/bazel-out
+/public/*
 
 
 # Node
-/ProjectMF/angular_final/mfanalysis/node_modules/*
+/node_modules
 npm-debug.log
 yarn-error.log
 

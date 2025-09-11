@@ -1,0 +1,27 @@
+.footerMain {
+  height: 14vh;
+  width: 97.5%;
+  border: 2px solid black;
+  position: fixed;
+  bottom: 0;
+  left: 1%;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;      /* Stack children vertically */
+  align-items: center;         /* Center horizontally */
+  justify-content: center;     /* Center vertically */ 
+  padding: 5px 0;             /* Optional spacing */
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.clickable-text-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 1px;          /* Space below links */
+}
+
+.clickable-text {
+  text-decoration: underline;
+  cursor: pointer;
+}

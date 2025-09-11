@@ -1,0 +1,13 @@
+.navbarMain {
+  height: 8vh;
+  width: 81.5%;
+  border: 2px solid black;
+  position: fixed;
+  top: 1%;
+  left: 16.7%;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}

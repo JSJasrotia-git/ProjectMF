@@ -1,0 +1,90 @@
+<div class="content">
+  <div class="main-wrapper">
+
+    <div class="midleftMain">
+      <div class="input-container">
+        <input #MfCode class="inputMFNumber" placeholder="Specify MF Code" />
+        <input #NumOfDays class="inputRollingRet" placeholder="Rolling Return: #of Days" />
+        <button class="GetMFData" (click)="MFDetails(MfCode.value, NumOfDays.value)">GET Fund Details</button>
+      </div>
+
+      <div class="tables-container">
+
+        @if (leftData.length) {
+          <div class="One-table-wrapper">
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>NAV</th>
+                <th>Rolling Return</th>
+              </tr>
+              <tr *ngFor="let item of leftData">
+                <td>{{ item.date }}</td>
+                <td>{{ item.nav }}</td>
+                <td [ngStyle]="{'background-color': getRollingRetColor(item.rollingret)}">{{ item.rollingret }}</td>
+              </tr>
+            </table>
+          </div>
+        }
+
+        @if (rightData.length) {
+          <div class="two-table-wrapper">
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>NAV</th>
+                <th>Rolling Return</th>
+              </tr>
+              <tr *ngFor="let item of rightData">
+                <td>{{ item.date }}</td>
+                <td>{{ item.nav }}</td>
+                <td [ngStyle]="{'background-color': getRollingRetColor(item.rollingret)}">{{ item.rollingret }}</td>
+              </tr>
+            </table>
+          </div>
+        }
+
+      </div> <!-- end tables-container -->
+
+    </div> <!-- end midleftMain -->
+
+    <div class="right-side">
+      <strong>Take      Aways</strong>
+
+      <table>
+        <thead>
+          <tr>
+          <th>#of Days</th>
+          <th>Total Data Points</th>
+          <th>Applicable Data Points</th>
+          <th>+ve Return</th>
+          <th>-ve Return</th>
+          <th>Not Applicable</th>
+        </tr>
+
+        </thead>
+        <tbody>
+          @for(item of takeaways; track item){
+          <tr>
+          <td>{{ item.rollingretdays }}</td>
+          <td>{{ item.totdatapoints }}</td>
+          <td>{{ item.applicabledatapoints }}</td>
+          <td>{{ item.postiverollingreturn }}</td>
+          <td>{{ item.negativeRollingReturns }}</td>
+          <td>{{ item.notapplicableRollingReturns }}</td>
+          </tr>
+          }
+        </tbody>
+      </table>
+      <div class="funddetailstext">
+        @for(item of mfdetails; track item){
+          <p> For Fund code   : {{item.schemecode}}</p>
+          <p> Fund Name       : {{item.schemename}}</p>
+          <p> Fund Category is: {{item.schemecategory}}</p>
+          <p> Date/NAV   : {{item.DateNav}}</p>
+        }
+      </div>
+    </div>
+
+  </div> <!-- end main-wrapper -->
+</div>
