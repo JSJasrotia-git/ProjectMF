@@ -12,12 +12,15 @@ import { mymfdata } from '../../assets/mfdetails.json';
   styleUrl: './midleft.css'
 })
 export class Midleft implements OnInit{
-  data: Intdateprice[] = []; // to get JSOn data from Service
+  data: Intdateprice[] = []; // to get Json data from Service
   takeaways: Inttakeaways[] = []; //to populate takeaways
   mfdetails: Intmfdetails[] = []; // to populate mf details
   _mfdata: any;
   _numofdays: number = 30;
   _mfnum: number = 0;
+  _beginingtexttoshow = "There is a : ";
+  _endingtexttoshow = " chance that your capital is at risk within ";
+  _finaltexttoshow = "";
   //Constructor
   constructor(private _filename:Readjson){
   }
@@ -37,10 +40,10 @@ export class Midleft implements OnInit{
         return;
        }
     //Validation for Num of days
-      if (!Number.isNaN(Number(Numofdays)) && (Number(Numofdays) > 2) && (Number(Numofdays) < 1000)) {
+      if (!Number.isNaN(Number(Numofdays)) && (Number(Numofdays) >= 2) && (Number(Numofdays) <= 1000)) {
         //we can move fwd, else we need to provide an error and return
       } else {
-        alert("Please enter valid number of days");
+        alert("Please enter valid number of days between 2 and 1000");
         return;
       }
       //Check if the file exists or not
@@ -114,6 +117,8 @@ export class Midleft implements OnInit{
         notapplicableRollingReturns: this._numofdays
       });
       this.takeaways.push(...loctakeaway);
+      //build final message to show
+      this._finaltexttoshow = this._beginingtexttoshow + (((loctakeaway[0].negativeRollingReturns*100)/loctakeaway[0].applicabledatapoints).toFixed(2)) + this._endingtexttoshow +loctakeaway[0].rollingretdays+ " days";
   }
 
   ///for splitting the data into 2
@@ -137,7 +142,8 @@ export class Midleft implements OnInit{
             schemecode: this._mfdata[i].schemecode,
             schemename: this._mfdata[i].schemename,
             schemecategory: this._mfdata[i].schemecategory,
-            DateNav: this._mfdata[i].DateNav
+            date: this._mfdata[i].latestnavdate,
+            nav: this._mfdata[i].latestnav
           });
           this.mfdetails.push(...locmfdetails);
         return;

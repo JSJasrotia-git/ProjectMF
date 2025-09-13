@@ -19,7 +19,7 @@ export class Footer {
   }
 
   onContactUsClick() {
-    this.textToDisplay = 'You can reach me at projectmf@gmail.com';
+    this.textToDisplay = 'Checkout my repo: https://github.com/JSJasrotia-git';
   }
 
   get checktextToDisplay() {

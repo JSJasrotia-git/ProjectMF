@@ -3,7 +3,7 @@
 
     <div class="midleftMain">
       <div class="input-container">
-        <input #MfCode class="inputMFNumber" placeholder="Specify MF Code" />
+        <input #MfCode class="inputMFNumber" placeholder="Specify MF Scheme Code" />
         <input #NumOfDays class="inputRollingRet" placeholder="Rolling Return: #of Days" />
         <button class="GetMFData" (click)="MFDetails(MfCode.value, NumOfDays.value)">GET Fund Details</button>
       </div>
@@ -49,7 +49,7 @@
     </div> <!-- end midleftMain -->
 
     <div class="right-side">
-      <strong>Take      Aways</strong>
+      <strong>Take - Aways</strong>
 
       <table>
         <thead>
@@ -78,10 +78,13 @@
       </table>
       <div class="funddetailstext">
         @for(item of mfdetails; track item){
-          <p> For Fund code   : {{item.schemecode}}</p>
+          <p>  {{_finaltexttoshow}} </p>
+          <p> Fund code   : {{item.schemecode}}</p>
           <p> Fund Name       : {{item.schemename}}</p>
           <p> Fund Category is: {{item.schemecategory}}</p>
-          <p> Date/NAV   : {{item.DateNav}}</p>
+          <p> Latest NAV Date   : {{item.date}}</p>
+          <p> Latest NAV   : {{item.nav}}</p>
+          <p>*An year will have approx 250 data points due to markets not operating on weekend and holidays.</p>
         }
       </div>
     </div>
