@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { mymfdata } from '../../assets/mfdetails.json';
 
 @Component({
   selector: 'app-findfundnumber',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './findfundnumber.css'
 })
 export class Findfundnumber {
+_mfcodes: any;
 
+  ngOnInit(): void {
+      this._mfcodes = mymfdata;
+    // console.log(this.data);
+    }
 }

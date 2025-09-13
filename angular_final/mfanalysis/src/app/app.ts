@@ -12,7 +12,7 @@ import { Findfundnumber } from './findfundnumber/findfundnumber';
 })
 export class App {
   private _showmain: boolean = true; //variable to control main content visibility
-  ButtonTexttoshow: string = 'Find Fund Number'; //button text variable
+  ButtonTexttoshow: string = 'Find MF Scheme Code'; //button text variable
   protected readonly title = signal('mfanalysis');
   constructor() {
     this._showmain = true;
@@ -21,7 +21,7 @@ export class App {
   ChangeComponent() {
     this._showmain = !this._showmain;
     if (this._showmain) {
-      this.ButtonTexttoshow = 'Find Fund Number';
+      this.ButtonTexttoshow = 'Find MF Scheme Code';
     } else {
       this.ButtonTexttoshow = 'Back to Fund Analysis';
     }

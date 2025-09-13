@@ -1,0 +1,24 @@
+Execution Sequence:
+Rename the file Download_apimfapi.txt to Download_apimfapi.bat. Run time is around 4 hours.
+
+Run the batch file to download json files to folder: "C:\My Learning\ProjectMF\Data\api_mfapi_in"
+37000+ JSON's created including "apimfapii.json". This file has all the mf codes and names.
+
+Create the base DB table mfcodes by using the SQL in file postgres.sql.
+
+Once "apimfapii.json" is available in the folder "C:\My Learning\ProjectMF\Data\api_mfapi_in", 
+execute the python file "pushmfcodes_todb.py". 
+
+Executing "pushmfcodes_todb.py" will load the mf codes and names to db.
+
+Now execute the pushnav_todb.py. This python code creates the required MFCode tables and 
+populates the table as well as populates themfcodes table with relevant details aginst fund codes.
+Check the DB by executing the command SELECT schemecode FROM MFcodes where status IS NULL. 
+There should be Zero schemes where the "status" is null..some times the JSON downloaded are not correctly 
+formatted due to N/W issues, hence for those adjust the DB query within the python script and re-run the script, 
+if needed again download the files that are needed. The files can be downloaded by executing the CURL:
+curl -o "C:\My Learning\ProjectMF\Data\api_mfapi_in\100548.json" "https://api.mfapi.in/mf/100548"
+Adjust the MFcodes as needed, see Download_apimfapi.txt or Download_apimfapi.bat file as needed.
+
+post this run the file extractjson.py to get the JSON's. See details below
+

@@ -1,9 +1,14 @@
-#The code works but there may be an issue of imports tand Virtual environment.
+# This is a program to generate the MFcodes and MFDetails JSON files.
 
 import psycopg2
-from datetime import datetime
+from datetime import date, datetime
+import json
+import os
+from decimal import Decimal
+from psycopg2 import sql
 
-# Step 1: Connect to PostgreSQL database
+
+# Step 1: Connect to PostgreSQL database and fetch table data
 def gettabledata(query):
     conn = psycopg2.connect(
         dbname='projectmf',
@@ -13,78 +18,80 @@ def gettabledata(query):
         port='5432'  # default PostgreSQL port
     )
     cursor = conn.cursor()
-    # Step 2: Fetch multiple rows from the table
     cursor.execute(query)
     rows = cursor.fetchall()
     cursor.close()
     conn.close()
     return rows
-#End of function getmfcodes()
-#+++++++++++++++++++++++++++++++++++++++++++
 
-def writejson(jsondatatowrite, filename):
-    # # Convert PostgreSQL rows into list of dicts
-    filePath = "C:\\Project_Mf_Angular_Public_Data\\"
-    datatowrite = "["
-    for row in jsondatatowrite:
-        json_list_string = (str(row[0])).replace("nav date ",'')
-        converted_date = datetime.strptime(json_list_string, "%Y-%m-%d")
-        json_list_string = converted_date.strftime("%d-%m-%Y")
-        datatowrite = datatowrite + '{"date":"' + str(json_list_string) + '","nav":"' + str(row[1]) + '"},'     
-    datatowrite = datatowrite[:-1] + ']'
-    # Open the file in write mode at the specified path and write the string
-    with open(filePath + filename + ".json", "w") as file:
-        file.write(datatowrite)
-#End of function getmfcodes()
-#+++++++++++++++++++++++++++++++++++++++++++
 
-#Program Execution starts from here.
-sqlquery = "SELECT schemeCode FROM MFcodes"
+# Step 2: Convert rows to list of dicts and write JSON file
+def writejsonfor_mfdetails(rows):
+    filePath = "C:\\Project_Mf_Angular_Public_Data\\mfdetails.json"
+    keys = ['schemecode', 'schemename', 'schemecategory', 'latestnavdate', 'latestnav']
+    data = []
+    for row in rows:
+        row_dict = {}
+        for key, value in zip(keys, row):
+            if isinstance(value, (date, datetime)):
+                row_dict[key] = value.isoformat()
+            elif isinstance(value, Decimal):
+                row_dict[key] = float(value)  # or str(value) if preferred
+            else:
+                row_dict[key] = value
+        data.append(row_dict)
+    
+    output = {"mymfdata": data}
+    
+    with open(filePath, "w", encoding="utf-8") as file:
+        json.dump(output, file, ensure_ascii=False, indent=2)
+
+
+def createactivefundsjson(mfcode):
+    filePath = "C:\\Project_Mf_Angular_Public_Data\\runtimejsonfiles\\" + mfcode + ".json"
+    tablesqlquery = sql.SQL(
+    'SELECT navdate, nav FROM {table} ORDER BY navdate DESC'
+    ).format(table=sql.Identifier(mfcode))
+
+    navanddate = gettabledata(tablesqlquery)
+
+    keys = ['navdate', 'nav']
+    
+    data = []
+    for row in navanddate:
+        row_dict = {}
+        for key, value in zip(keys, row):
+            if isinstance(value, (date, datetime)):
+                row_dict[key] = value.isoformat()
+            elif isinstance(value, Decimal):
+                row_dict[key] = float(value)  # or str(value) if preferred
+            else:
+                row_dict[key] = value
+        data.append(row_dict)
+    
+    # output = {"mymfdata": data}
+    
+    with open(filePath, "w", encoding="utf-8") as file:
+        json.dump(data, file, ensure_ascii=False, indent=2)
+# Program execution starts here
+# Adjust the query to whatever status you want to filter
+# sqlquery = "SELECT schemecode, schemename, schemecategory, latestnavdate, latestnav FROM MFcodes WHERE status = 'ACTIVE'"
+sqlquery = """
+SELECT schemecode, schemename, schemecategory, latestnavdate, latestnav
+FROM MFcodes
+WHERE status = 'ACTIVE'
+ORDER BY fundhouse ASC, schemecategory ASC, schemename ASC
+"""
 mfcodes = gettabledata(sqlquery)
+writejsonfor_mfdetails(mfcodes)
+
+# Create the navdate and price json for each of the fund
+mfactivenav = "SELECT schemeCode FROM MFcodes WHERE status = 'ACTIVE'" #Fetch fresh
+mfcodes = gettabledata(sqlquery)
+count = 0
 for row in mfcodes:
-    table_name = str(row[0])    # Create a table if it does not exist.
-    sqlquery = 'SELECT * FROM "' + table_name + '"'
-    jsondatatowrite = gettabledata(sqlquery)
-    writejson(jsondatatowrite, table_name)
-#End of Program    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Connect to your PostgreSQL database
-# conn = psycopg2.connect(
-#     dbname="your_database",
-#     user="your_username",
-#     password="your_password",
-#     host="your_host",
-#     port="your_port"
-# )
-# cur = conn.cursor()
-
-# # Query all data from your table
-# cur.execute("SELECT * FROM your_table_name")  # replace with your table
-# columns = [desc for desc in cur.description]
-# rows = cur.fetchall()
-
-# # Convert PostgreSQL rows into list of dicts
-# table_data = [dict(zip(columns, row)) for row in rows]
-
-# # Save as JSON
-# with open("table_data.json", "w", encoding="utf-8") as f:
-#     json.dump(table_data, f, ensure_ascii=False, indent=2)
-
-# cur.close()
-# conn.close()
+    createactivefundsjson(str(row[0]))
+    # count+=1
+    # if(count>2):
+    #     break
+# To be done for all active tables data

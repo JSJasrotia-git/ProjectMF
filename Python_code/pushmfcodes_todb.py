@@ -14,29 +14,21 @@ cursor = conn.cursor()
 
 with open(directory_path, 'r') as f:
     data = json.load(f)
-    JSON_Data = data["MFDetails"]
-    #keys = data.keys()
-
-# Sort the JSON as per codes
-sorted_data = sorted(JSON_Data, key=lambda x: x['schemeCode'])
 
 lenofstring = 0
 scheme_name = "test"
 
-for record in JSON_Data:
+for record in data:
     scheme_code = record['schemeCode']
     scheme_name = record['schemeName']
-    isin_growth = record['isinGrowth']
-    isin_div_reinvestment = record['isinDivReinvestment']
     cursor.execute('''
-    INSERT INTO MFcodes (schemeCode, schemeName, isinGrowth, isinDivReinvestment )
-    VALUES (%s, %s, %s, %s)
-    ''', (scheme_code, scheme_name, isin_growth, isin_div_reinvestment)) 
+    INSERT INTO MFcodes (schemeCode, schemeName)
+    VALUES (%s, %s)
+    ''', (scheme_code, scheme_name)) 
+
 # Commit the data
-
 conn.commit()
-
 # Step 5: Close the cursor and connection
 cursor.close()
 conn.close()
-   #print(scheme_code, scheme_name, isin_growth, isin_div_reinvestment)
+

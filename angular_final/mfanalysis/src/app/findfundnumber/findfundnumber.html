@@ -1,7 +1,26 @@
 <div class="content"> 
-    <div class="findfundMain">
-        <h2>Find Fund Number</h2>
-        <p>This is the Find Fund Number component.</p>
-
+    <div class="displaymfcodes">
+      <table>
+        <thead>
+          <tr>
+          <th>Scheme Code</th>
+          <th>Scheme Name   </th>
+          <th>Scheme Category</th>
+          <th>Latest NAV Date</th>
+          <th>Latest NAV</th>
+        </tr>
+        </thead>
+        <tbody>
+          @for(item of _mfcodes; track item){
+          <tr>
+          <td>{{ item.schemecode }}</td>
+          <td>{{ item.schemename }}</td>
+          <td>{{ item.schemecategory }}</td>
+          <td>{{ item.latestnavdate }}</td>
+          <td>{{ item.latestnav }}</td>
+          </tr>
+          }
+        </tbody>
+      </table>
     </div>
 </div>

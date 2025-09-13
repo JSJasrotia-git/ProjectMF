@@ -14,10 +14,7 @@ export interface Inttakeaways {
 export interface Intmfdetails {
     schemecode: string;
     schemename: string;
-   // schemestatus: string;
     schemecategory: string;
-   // fundhouse: string;
-   // startdate: string;
-    DateNav: string;
-   // nav: string;
+    date: string;
+    nav: string;
 }

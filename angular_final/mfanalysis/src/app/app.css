@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 
-.buttondisplay{
+/* .buttondisplay{
   height: 9vh;
   width: 15vw;
   border: 2px solid black;
@@ -25,5 +25,24 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
+} */
+
+.buttondisplay {
+  height: 9vh;
+  width: 15vw;
+  border: 2px solid black;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  background: linear-gradient(to right, rgba(173,216,230,1) 0%, rgba(255,255,255,0) 100%);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
 }
+
+
+
 
