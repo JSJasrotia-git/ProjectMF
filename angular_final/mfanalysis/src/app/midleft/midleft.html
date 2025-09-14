@@ -57,33 +57,34 @@
           <th>#of Days</th>
           <th>Total Data Points</th>
           <th>Applicable Data Points</th>
-          <th>+ve Return</th>
-          <th>-ve Return</th>
+          <th>+ve Return /Avg %age</th>
+          <th>-ve Return / Avg %age</th>
           <th>Not Applicable</th>
         </tr>
 
         </thead>
         <tbody>
-          @for(item of takeaways; track item){
-          <tr>
-          <td>{{ item.rollingretdays }}</td>
-          <td>{{ item.totdatapoints }}</td>
-          <td>{{ item.applicabledatapoints }}</td>
-          <td>{{ item.postiverollingreturn }}</td>
-          <td>{{ item.negativeRollingReturns }}</td>
-          <td>{{ item.notapplicableRollingReturns }}</td>
-          </tr>
+          @for(item of _datatakeaways; track item){
+            <tr>
+              <td>{{ item.rollingretdays }}</td>
+              <td>{{ item.totdatapoints }}</td>
+              <td>{{ item.applicabledatapoints }}</td>
+              <td [ngStyle]="{'background-color': 'lightgreen'}">{{ item.postiverollingreturn }}</td>
+              <td [ngStyle]="{'background-color': 'Yellow'}">{{ item.negativeRollingReturns }}</td>
+              <td>{{ item.notapplicableRollingReturns }}</td>
+            </tr>
           }
         </tbody>
       </table>
       <div class="funddetailstext">
-        @for(item of mfdetails; track item){
+        @for(item of _mfdetails; track item){
           <p>  {{_finaltexttoshow}} </p>
           <p> Fund code   : {{item.schemecode}}</p>
           <p> Fund Name       : {{item.schemename}}</p>
           <p> Fund Category is: {{item.schemecategory}}</p>
           <p> Latest NAV Date   : {{item.date}}</p>
           <p> Latest NAV   : {{item.nav}}</p>
+          <p> {{item.retsummary}} </p>
           <p>*An year will have approx 250 data points due to markets not operating on weekend and holidays.</p>
         }
       </div>

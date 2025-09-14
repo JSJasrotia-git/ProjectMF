@@ -104,9 +104,10 @@
 .right-side th, .right-side td {
   border: 1px solid #888;      /* Border on all table cells */
   padding: 6px 12px;
-  text-align: left;
+  text-align: center;
   vertical-align: top;
   word-break: break-word;      /* Wrap long text */
+  font-size: 12.5px; /* Smaller font size */
 }
 
 .funddetailstext {
