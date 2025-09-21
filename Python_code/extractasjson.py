@@ -28,7 +28,7 @@ def gettabledata(query):
 # Step 2: Convert rows to list of dicts and write JSON file
 def writejsonfor_mfdetails(rows):
     filePath = "C:\\Project_Mf_Angular_Public_Data\\mfdetails.json"
-    keys = ['schemecode', 'schemename', 'schemecategory', 'latestnavdate', 'latestnav']
+    keys = ['schemecode', 'schemename', 'schemecategory']
     data = []
     for row in rows:
         row_dict = {}
@@ -75,23 +75,29 @@ def createactivefundsjson(mfcode):
         json.dump(data, file, ensure_ascii=False, indent=2)
 # Program execution starts here
 # Adjust the query to whatever status you want to filter
-# sqlquery = "SELECT schemecode, schemename, schemecategory, latestnavdate, latestnav FROM MFcodes WHERE status = 'ACTIVE'"
+sqlquery = "SELECT schemecode, schemename, schemecategory FROM MFcodes WHERE status = 'ACTIVE'"
 sqlquery = """
 SELECT schemecode, schemename, schemecategory, latestnavdate, latestnav
 FROM MFcodes
 WHERE status = 'ACTIVE'
 ORDER BY fundhouse ASC, schemecategory ASC, schemename ASC
 """
+# sqlquery = """
+# SELECT schemecode
+# FROM MFcodes
+# WHERE status = 'ACTIVE'
+# ORDER BY fundhouse ASC, schemecategory ASC, schemename ASC
+# """
 mfcodes = gettabledata(sqlquery)
 writejsonfor_mfdetails(mfcodes)
 
 # Create the navdate and price json for each of the fund
-mfactivenav = "SELECT schemeCode FROM MFcodes WHERE status = 'ACTIVE'" #Fetch fresh
-mfcodes = gettabledata(sqlquery)
-count = 0
-for row in mfcodes:
-    createactivefundsjson(str(row[0]))
-    # count+=1
-    # if(count>2):
-    #     break
-# To be done for all active tables data
+# mfactivenav = "SELECT schemeCode FROM MFcodes WHERE status = 'ACTIVE'" #Fetch fresh
+# mfcodes = gettabledata(sqlquery)
+# count = 0
+# for row in mfcodes:
+#     createactivefundsjson(str(row[0]))
+#     # count+=1
+#     # if(count>2):
+#     #     break
+# # To be done for all active tables data

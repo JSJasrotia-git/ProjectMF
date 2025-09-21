@@ -3,31 +3,36 @@
   background: #f8f8fa;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(50,60,80,0.06);
-  max-width: 98%;
+  /* max-width: 97%; */
   margin: 0 auto;
-  margin-bottom: 8rem;
-  max-height: 90vh;
+  margin-bottom: 6rem;
+  max-height: 96vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-
+  width: 97.4vw;
   overflow-x: auto;  /* disable outer horizontal scroll */
 }
 
 
+.displaymfcodes table tr th:first-child,
+.displaymfcodes table tr th:nth-child(2) {
+  background-color: lightblue;
+  color: black
+}
 
 /* Table Styling */
 .displaymfcodes table {
   width: 100%;
   border-collapse: collapse;
-  background: #fff;
+  background: #e0e0e5;
   table-layout: fixed;
   font-size: .9rem;
 }
 
 /* Fixed table header */
 .displaymfcodes thead {
-  background: #f0f1f4;
+  background: lightblue;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -77,11 +82,27 @@
   overflow-x: auto;
 }
 
-/* Optionally override column widths for Scheme Code or narrow columns */
+/* Scheme Code column width */
 .displaymfcodes th:nth-child(1),
 .displaymfcodes td:nth-child(1) {
-  max-width: 6ch;
+  width: 14ch;
+  max-width: 15ch;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Scheme Name column width */
+.displaymfcodes th:nth-child(2),
+.displaymfcodes td:nth-child(2) {
+  width: auto; /* expand scheme name width */
+  white-space: normal; /* allow wrapping */
+}
+/* highlight the 5 seconds message */
+.highlight-text {
+  background-color:#FF6347;
+  font-weight: bold;
+  color: black; /* Optional: for contrast */
+  padding: 2px 4px; /* Optional: some padding */
+  border-radius: 3px; /* Optional: rounded corners */
 }

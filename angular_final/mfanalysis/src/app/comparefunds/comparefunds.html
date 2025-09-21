@@ -1,0 +1,83 @@
+<div class="content">
+  <div class="main-wrapper">
+        <div class="midleftMain">
+            <div class="input-container">
+                <input #firstfund class="firstfundnumber" placeholder="1st Scheme Code" value="122639"/>
+                <input #secondfund class="secondfundnumber" placeholder="2nd Scheme Code" value="118955"/>
+                <input #NumOfDays class="inputRollingRet" placeholder="Rolling Return: #of Days" value="750"/>
+                <button class="comparefunds" (click)="comparefunds(firstfund.value, secondfund.value, NumOfDays.value)">Compare Funds</button>
+            </div>
+<!-- Adding HTML code to display the return values -->
+   <!-- Data Takeaways Tables (Fund 1 and Fund 2) -->
+        <div class="table-container">
+          <div class="table-containerfund">
+            <table class="funddetails-table">
+              <thead>
+                <tr>
+                  <th>Scheme Code</th>
+                  <th>Scheme Name</th>
+                  <th>Scheme Category</th>
+                  <th>Date</th>
+                  <th>NAV</th>
+                  <th>Return Summary</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{ _mfdetailsfundone[0].schemecode }}</td>
+                  <td>{{ _mfdetailsfundone[0].schemename }}</td>
+                  <td>{{ _mfdetailsfundone[0].schemecategory }}</td>
+                  <td>{{ _mfdetailsfundone[0].date }}</td>
+                  <td>{{ _mfdetailsfundone[0].nav }}</td>
+                  <td>{{ _mfdetailsfundone[0].retsummary }}</td>
+                </tr>
+                <tr>
+                  <td>{{ _mfdetailsfundtwo[0].schemecode }}</td>
+                  <td>{{ _mfdetailsfundtwo[0].schemename }}</td>
+                  <td>{{ _mfdetailsfundtwo[0].schemecategory }}</td>
+                  <td>{{ _mfdetailsfundtwo[0].date }}</td>
+                  <td>{{ _mfdetailsfundtwo[0].nav }}</td>
+                  <td>{{ _mfdetailsfundtwo[0].retsummary }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-containertakeaway"></div>
+            <table class="takeaways-table">
+              <thead>
+                <tr>
+                  <th>Scheme Code</th>
+                  <th>Rolling Ret Days</th>
+                  <th>Total Data Points / Considered Data points</th>
+                  <th>Applicable Data Points</th>
+                  <th>Positive Rolling Returns</th>
+                  <th>Negative Rolling Returns</th>
+                  <th>Not Applicable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{ _mfdetailsfundone[0].schemecode }}</td>
+                  <td>{{ _fundonedatatakeaways[0].rollingretdays }}</td>
+                  <td>{{ _totaldatapointsone }} / {{ _fundonedatatakeaways[0].totdatapoints }}</td>
+                  <td>{{ _fundonedatatakeaways[0].applicabledatapoints }}</td>
+                  <td>{{ _fundonedatatakeaways[0].postiverollingreturn }}</td>
+                  <td>{{ _fundonedatatakeaways[0].negativeRollingReturns }}</td>
+                  <td>{{ _fundonedatatakeaways[0].notapplicableRollingReturns }}</td>
+                </tr>
+                <tr>
+                  <td>{{ _mfdetailsfundtwo[0].schemecode }}</td>
+                  <td>{{ _fundtwodatatakeaways[0].rollingretdays }}</td>
+                  <td>{{ _totaldatapointstwo }} / {{ _fundtwodatatakeaways[0].totdatapoints }}</td>
+                  <td>{{ _fundtwodatatakeaways[0].applicabledatapoints }}</td>
+                  <td>{{ _fundtwodatatakeaways[0].postiverollingreturn }}</td>
+                  <td>{{ _fundtwodatatakeaways[0].negativeRollingReturns }}</td>
+                  <td>{{ _fundtwodatatakeaways[0].notapplicableRollingReturns }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<p class="highlight-maroon">Each NAV value is considered 1 data point, to compare both the funds within the same time period, the considered data points are the lower of total data points between both the funds.</p>
+<!-- Fund Details Tables (Fund 1 and Fund 2) -->
+</div>
+

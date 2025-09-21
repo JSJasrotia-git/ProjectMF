@@ -39,7 +39,7 @@ nginx notes:
 https://www.youtube.com/watch?v=9jZEfW8h5fQ   .....https://github.com/iam-veeramalla/nginx-zero-to-hero
 Can be used as a webserver / reverse proxy, load balancer
 
-
+Fr building angular20 project, use command:ng b --output-path docs --base-href /mfanalysis/
 ISTIO:
 https://www.youtube.com/watch?v=eSNetKBe7Z8
 

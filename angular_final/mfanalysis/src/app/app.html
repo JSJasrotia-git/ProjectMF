@@ -1,11 +1,15 @@
 <div class="content">
   <app-navbar></app-navbar>
-  <button class="buttondisplay" (click)="ChangeComponent()">{{ ButtonTexttoshow }}</button>
+  <button class="buttondisplayfindfunds" (click)="callfromfirstbutton()">{{ texttoshowbutton1 }}</button>
+  <button class="buttondisplaycomparefunds" (click)="callfromsecondbutton()">{{ texttoshowbutton2 }}</button>
   <!-- Have to add conditional rendering for midleft and midright components -->
-    @if (showmain) {
+    @if (showleft) {
       <app-midleft></app-midleft>
-    } @else {
+    }@else if (showfindfund) {
       <app-findfundnumber></app-findfundnumber>
+    }
+    @else if (showcompare) {
+      <app-comparefunds></app-comparefunds>
     }
     <app-footer></app-footer>
 </div>

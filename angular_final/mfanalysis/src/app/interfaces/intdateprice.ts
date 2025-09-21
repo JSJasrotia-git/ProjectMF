@@ -40,7 +40,9 @@ export interface Intmfdetails {
 export interface mymfdatajson {
     schemecode: Number;
     schemename: string;
-    schemecategory: string;
-    latestnavdate: string;
-    latestnav: Number;
+}
+
+export interface SchemeNav {
+  schemeCode: string;
+  schemeName: string;
 }

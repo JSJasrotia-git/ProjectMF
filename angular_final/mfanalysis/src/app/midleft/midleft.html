@@ -3,9 +3,9 @@
 
     <div class="midleftMain">
       <div class="input-container">
-        <input #MfCode class="inputMFNumber" placeholder="Specify MF Scheme Code" />
-        <input #NumOfDays class="inputRollingRet" placeholder="Rolling Return: #of Days" />
-        <button class="GetMFData" (click)="MFDetails(MfCode.value, NumOfDays.value)">GET Fund Details</button>
+        <input #MfCode class="inputMFNumber" placeholder="Specify MF Scheme Code" value="122639"/>
+        <input #NumOfDays class="inputRollingRet" placeholder="Rolling Return: #of Days" value="500"/>
+        <button class="GetMFData" (click)="MFDetails(MfCode.value, NumOfDays.value)">Calculate Rolling Returns</button>
       </div>
 
       <div class="tables-container">
@@ -16,12 +16,12 @@
               <tr>
                 <th>Date</th>
                 <th>NAV</th>
-                <th>Rolling Return</th>
+                <th>Rolling Return / %age</th>
               </tr>
               <tr *ngFor="let item of leftData">
                 <td>{{ item.date }}</td>
                 <td>{{ item.nav }}</td>
-                <td [ngStyle]="{'background-color': getRollingRetColor(item.rollingret)}">{{ item.rollingret }}</td>
+                <td [ngStyle]="{'background-color': getRollingRetColor(item.rollingret)}">{{ item.rollingret }} / {{item.percentage}} %</td>
               </tr>
             </table>
           </div>
@@ -33,12 +33,12 @@
               <tr>
                 <th>Date</th>
                 <th>NAV</th>
-                <th>Rolling Return</th>
+                <th>Rolling Return / %age</th>
               </tr>
               <tr *ngFor="let item of rightData">
                 <td>{{ item.date }}</td>
                 <td>{{ item.nav }}</td>
-                <td [ngStyle]="{'background-color': getRollingRetColor(item.rollingret)}">{{ item.rollingret }}</td>
+                <td [ngStyle]="{'background-color': getRollingRetColor(item.rollingret)}">{{ item.rollingret }} / {{item.percentage}} %</td>
               </tr>
             </table>
           </div>
