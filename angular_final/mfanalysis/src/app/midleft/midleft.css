@@ -1,7 +1,7 @@
 .main-wrapper {
   display: flex;
   flex-direction: row;
-  width: 97vw;
+  width: 98vw;
   height: 76vh;
   gap: 15px;
   box-sizing: border-box;
@@ -32,14 +32,14 @@
 
 .tables-container {
   display: flex;
-  gap: 5px;
-  width: 100%;
-  max-height: 72vh;
+  gap: .1px;
+  width: 99%;
+  max-height: 85vh;
   overflow-x: auto;
   overflow-y: auto;
-  box-sizing: border-box;
-  padding-right: 10px;
-  border: 2px solid black;
+  box-sizing: content-box;
+  padding-right: 1%;
+  border: .5px solid black;
 }
 
 .One-table-wrapper,
@@ -47,7 +47,7 @@
   flex: 0 0 50%;
   overflow: visible;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
 }
 
@@ -60,13 +60,13 @@
 .One-table-wrapper th, .two-table-wrapper th,
 .One-table-wrapper td, .two-table-wrapper td {
   border: 0.5px solid #888;
-  padding: 6px 12px;
+  padding: 4px 6px;
   text-align: center;
   vertical-align: top;
-  margin: 0;
+  margin: 2;
   font-family: inherit;
-  line-height: 1.2;
-  font-size: 12.5px;  /* Reduced font size, adjust as needed */
+  line-height: 1.5;
+  font-size: 12px;  /* Reduced font size, adjust as needed */
 }
 
 .inputMFNumber,
@@ -104,9 +104,10 @@
 .right-side th, .right-side td {
   border: 1px solid #888;      /* Border on all table cells */
   padding: 6px 12px;
-  text-align: left;
+  text-align: center;
   vertical-align: top;
   word-break: break-word;      /* Wrap long text */
+  font-size: 12.5px; /* Smaller font size */
 }
 
 .funddetailstext {

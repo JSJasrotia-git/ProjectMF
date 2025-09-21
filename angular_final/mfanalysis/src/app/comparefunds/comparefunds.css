@@ -1,0 +1,84 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 97.6vw;
+  height: 76vh;
+  gap: 15px;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: lightblue;
+}
+
+/* Adjust midleftMain to take remaining space besides right-side */
+.midleftMain {
+  flex: 1 0 100%;    /* Take full width of parent flex container */
+  max-width: 100%;
+  border: 2px solid black;
+  background: lightgray;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.input-container {
+  display: flex;
+  gap: 0;
+  width: 100%;
+  max-width: none;  /* remove max-width limit */
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.firstfundnumber,
+.secondfundnumber,
+.inputRollingRet,
+.comparefunds {
+  flex-basis: 22%;  /* approximately equal widths */
+  box-sizing: border-box;
+}
+
+
+.comparefunds {
+  padding: 6px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Add borders between table cells */
+.funddetails-table,
+.takeaways-table {
+  border-collapse: collapse; /* Ensures borders between cells are shared */
+  width: 100%;
+}
+
+.funddetails-table th,
+.funddetails-table td,
+.takeaways-table th,
+.takeaways-table td {
+  border: 1px solid #666;    /* Add a solid border line */
+  padding: 8px 12px;
+  text-align: left;
+}
+
+/* Add vertical gap between the two table container divs */
+.table-containerfund {
+  margin-bottom: 24px; /* space below fund details table container */
+}
+
+.table-containertakeaway {
+  /* Add any needed styling, including margin-top if needed */
+  margin-top: 24px; /* space above takeaway table container */
+}
+
+.table-container{
+    background: lightblue;
+}
+.highlight-maroon {
+  color: maroon;
+  font-weight: 600; /* Optional: make text slightly bolder */
+  margin-top: 16px;
+  margin-bottom: 16px;
+}

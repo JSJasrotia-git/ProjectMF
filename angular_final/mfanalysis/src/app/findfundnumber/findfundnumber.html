@@ -4,20 +4,18 @@
         <thead>
           <tr>
           <th>Scheme Code</th>
-          <th>Scheme Name   </th>
-          <th>Scheme Category</th>
-          <th>Latest NAV Date</th>
-          <th>Latest NAV</th>
+          <th>
+            Scheme Name (Use the browser "CTRL + F" / Find to find your scheme name & then use the 6 (six) digit code to analyse your fund, example 153357 for "360 ONE Gold ETF". 
+            <span class="highlight-text">This data takes around 5+ seconds to come up</span> as this loads more than 37000+ records.)
+          </th>
         </tr>
         </thead>
         <tbody>
-          @for(item of _mfcodes; track item){
+          @for(item of navData; track item){
           <tr>
-          <td>{{ item.schemecode }}</td>
-          <td>{{ item.schemename }}</td>
-          <td>{{ item.schemecategory }}</td>
-          <td>{{ item.latestnavdate }}</td>
-          <td>{{ item.latestnav }}</td>
+          <td>{{ item.schemeCode }}</td>
+          <td>{{ item.schemeName }}</td>
+          <!-- <td>{{ item.schemecategory }}</td> -->
           </tr>
           }
         </tbody>

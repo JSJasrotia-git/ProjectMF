@@ -1,6 +1,7 @@
 :host {
   display: block;
-  height: 100vh;
+  height: 88.5vh;
+  /* width: 55vh */
   margin: 0;
   padding: 0;
 }
@@ -11,25 +12,12 @@
   margin-top: 10vh;   /* Below header */
   margin-bottom: 15vh; /* Above footer */
   box-sizing: border-box;
+  width: 100%; /* Add this line to set full width */
 }
 
-/* .buttondisplay{
-  height: 9vh;
-  width: 15vw;
-  border: 2px solid black;
-  position: fixed;
-  top: 1%;
-  left: 1%;
-  background-color: lightcoral;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-} */
-
-.buttondisplay {
-  height: 9vh;
-  width: 15vw;
+.buttondisplayfindfunds {
+  height: 8.5vh;
+  width: 15.5vw;
   border: 2px solid black;
   position: fixed;
   top: 1%;
@@ -41,8 +29,24 @@
   justify-content: center;
   z-index: 1000;
   cursor: pointer;
+  text-decoration: underline; /* Add this line to underline text */
 }
 
-
+.buttondisplaycomparefunds {
+  height: 8.5vh;
+  width: 15.5vw;
+  border: 2px solid black;
+  position: fixed;
+  top: 1%;
+  left: 16.9%;
+  background: linear-gradient(to right, #FFFACD 0%, rgba(255,255,255,0) 100%);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  text-decoration: underline; /* Add this line to underline text */
+}
 
 

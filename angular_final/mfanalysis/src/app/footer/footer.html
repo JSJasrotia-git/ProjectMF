@@ -1,14 +1,15 @@
-<div class="content">   
-    <div class="footerMain">
-        <div class="clickable-text-container">
-        <span class="clickable-text" (click)="onHomeClick()">Home</span>
-        <span class="clickable-text" (click)="onAboutMeClick()">About Me</span>
-        <span class="clickable-text" (click)="onContactUsClick()">Contact Us</span>
-        </div>
-        <!-- <br /> -->
-       @if (checktextToDisplay) { <div style="clear: both; width: 100%; margin-top: 5px;">
-            <p>{{textToDisplay}}</p>
-        </div>
-        }
+<div class="content">   
+  <div class="footerMain">
+    <div class="clickable-text-container">
+      <span class="clickable-text" (click)="onHomeClick()">Home</span>
+      <span class="clickable-text" (click)="onAboutMeClick()">About Me</span>
+      <span class="clickable-text" (click)="onContactUsClick()">Contact / Github</span>
+      <span class="clickable-text" (click)="onCreditClick()">Credits</span>
     </div>
+
+    <!-- Using Angular 20 if directive for conditional render -->
+    <div *ngIf="checktextToDisplay" style="clear: both; width: 100%; margin-top: 5px;">
+      <p [innerHTML]="textToDisplay"></p>
+    </div>
+  </div>
 </div>
