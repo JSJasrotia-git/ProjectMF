@@ -1,767 +1,936 @@
-[
- {
-   "schemecode": 153401,
-   "schemename": "KOTAK NIFTY MIDCAP 150 INDEX FUND-DIRECT PLAN-GROWTH",
-   "rank_1": null,
-   "rank_2": null,
-   "rank_3": null,
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 153581,
-   "schemename": "Tata Nifty Midcap 150 Index Fund - Direct Plan - Growth Option",
-   "rank_1": null,
-   "rank_2": null,
-   "rank_3": null,
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 153728,
-   "schemename": "Bank of India Mid Cap Fund - Direct Plan Growth",
-   "rank_1": null,
-   "rank_2": null,
-   "rank_3": null,
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 153326,
-   "schemename": "Helios Mid Cap Fund - Direct Plan - Growth Option",
-   "rank_1": null,
-   "rank_2": null,
-   "rank_3": null,
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 153788,
-   "schemename": "JioBlackRock Nifty Midcap 150 Index Fund - Direct Plan - Growth Option",
-   "rank_1": null,
-   "rank_2": null,
-   "rank_3": null,
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 119716,
-   "schemename": "SBI MIDCAP FUND - DIRECT PLAN - GROWTH",
-   "rank_1": "17",
-   "rank_2": "22",
-   "rank_3": "23",
-   "rank_4": "11",
-   "rank_5": "14",
-   "rank_6": "13",
-   "rank_7": "11",
-   "rank_8": "10",
-   "rank_9": "8",
-   "rank_10": "7",
-   "rank_11": "8",
-   "rank_12": "7",
-   "rank_13": null
- },
- {
-   "schemecode": 118533,
-   "schemename": "Franklin India Mid Cap Fund - Direct - Growth",
-   "rank_1": "24",
-   "rank_2": "29",
-   "rank_3": "30",
-   "rank_4": "20",
-   "rank_5": "16",
-   "rank_6": "16",
-   "rank_7": "16",
-   "rank_8": "12",
-   "rank_9": "11",
-   "rank_10": "9",
-   "rank_11": "9",
-   "rank_12": "8",
-   "rank_13": null
- },
- {
-   "schemecode": 119581,
-   "schemename": "Sundaram Mid Cap Fund Direct Plan - Growth",
-   "rank_1": "23",
-   "rank_2": "28",
-   "rank_3": "29",
-   "rank_4": "19",
-   "rank_5": "19",
-   "rank_6": "18",
-   "rank_7": "17",
-   "rank_8": "14",
-   "rank_9": "14",
-   "rank_10": "11",
-   "rank_11": "10",
-   "rank_12": "9",
-   "rank_13": null
- },
- {
-   "schemecode": 150313,
-   "schemename": "UTI Nifty Midcap 150 Quality 50 Index Fund - Direct Plan - Growth Option",
-   "rank_1": "35",
-   "rank_2": "33",
-   "rank_3": "33",
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 150428,
-   "schemename": "DSP Nifty Midcap 150 Quality 50 Index Fund - Direct - Growth",
-   "rank_1": "33",
-   "rank_2": "35",
-   "rank_3": "34",
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 119071,
-   "schemename": "DSP Midcap Fund - Direct Plan - Growth",
-   "rank_1": "25",
-   "rank_2": "30",
-   "rank_3": "31",
-   "rank_4": "21",
-   "rank_5": "17",
-   "rank_6": "15",
-   "rank_7": "14",
-   "rank_8": "11",
-   "rank_9": "12",
-   "rank_10": "10",
-   "rank_11": "11",
-   "rank_12": "10",
-   "rank_13": null
- },
- {
-   "schemecode": 147445,
-   "schemename": "Mirae Asset Midcap Fund- Direct Growth Option",
-   "rank_1": "6",
-   "rank_2": "6",
-   "rank_3": "3",
-   "rank_4": "1",
-   "rank_5": "1",
-   "rank_6": "2",
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 118872,
-   "schemename": "Taurus Mid Cap Fund - Direct Plan - Growth",
-   "rank_1": "29",
-   "rank_2": "32",
-   "rank_3": "32",
-   "rank_4": "22",
-   "rank_5": "18",
-   "rank_6": "17",
-   "rank_7": "15",
-   "rank_8": "13",
-   "rank_9": "13",
-   "rank_10": "12",
-   "rank_11": "12",
-   "rank_12": "11",
-   "rank_13": null
- },
- {
-   "schemecode": 151036,
-   "schemename": "HSBC Midcap Fund - Direct Growth",
-   "rank_1": "3",
-   "rank_2": "5",
-   "rank_3": "7",
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 148733,
-   "schemename": "ITI Mid Cap Fund - Direct Plan - Growth Option",
-   "rank_1": "27",
-   "rank_2": "9",
-   "rank_3": "5",
-   "rank_4": "18",
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 125307,
-   "schemename": "PGIM India Midcap Fund - Direct Plan - Growth Option",
-   "rank_1": "31",
-   "rank_2": "31",
-   "rank_3": "27",
-   "rank_4": "13",
-   "rank_5": "10",
-   "rank_6": "8",
-   "rank_7": "7",
-   "rank_8": "8",
-   "rank_9": "10",
-   "rank_10": "13",
-   "rank_11": "13",
-   "rank_12": "12",
-   "rank_13": null
- },
- {
-   "schemecode": 150902,
-   "schemename": "Edelweiss Nifty Midcap150 Momentum 50 Index Fund - Direct Plan - Growth",
-   "rank_1": "4",
-   "rank_2": "10",
-   "rank_3": "11",
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 149892,
-   "schemename": "Navi Nifty Midcap 150 Index Fund Direct Plan- Growth",
-   "rank_1": "12",
-   "rank_2": "4",
-   "rank_3": "12",
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 142110,
-   "schemename": "Mahindra Manulife Mid Cap Fund - Direct Plan -Growth",
-   "rank_1": "15",
-   "rank_2": "11",
-   "rank_3": "2",
-   "rank_4": "3",
-   "rank_5": "3",
-   "rank_6": "1",
-   "rank_7": "2",
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 150673,
-   "schemename": "SBI Nifty Midcap 150 Index Fund - Direct Plan - Growth",
-   "rank_1": "8",
-   "rank_2": "14",
-   "rank_3": "14",
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 149389,
-   "schemename": "ICICI Prudential Nifty Midcap 150 Index Fund - Direct Plan - Growth",
-   "rank_1": "16",
-   "rank_2": "7",
-   "rank_3": "15",
-   "rank_4": "23",
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 150212,
-   "schemename": "BARODA BNP PARIBAS Mid Cap Fund - Direct Plan - Growth Option",
-   "rank_1": "18",
-   "rank_2": "8",
-   "rank_3": "17",
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 150817,
-   "schemename": "Canara Robeco Mid Cap Fund- Direct Plan- Growth Option",
-   "rank_1": "11",
-   "rank_2": "17",
-   "rank_3": "19",
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 148073,
-   "schemename": "Union Midcap Fund - Direct Plan - Growth Option",
-   "rank_1": "5",
-   "rank_2": "12",
-   "rank_3": "8",
-   "rank_4": "2",
-   "rank_5": "2",
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 120403,
-   "schemename": "Invesco India Midcap Fund - Direct Plan - Growth Option",
-   "rank_1": "10",
-   "rank_2": "18",
-   "rank_3": "20",
-   "rank_4": "7",
-   "rank_5": "8",
-   "rank_6": "7",
-   "rank_7": "4",
-   "rank_8": "3",
-   "rank_9": "3",
-   "rank_10": "2",
-   "rank_11": "2",
-   "rank_12": "1",
-   "rank_13": null
- },
- {
-   "schemecode": 119775,
-   "schemename": "Kotak Midcap Fund - Direct Plan - Growth",
-   "rank_1": "9",
-   "rank_2": "15",
-   "rank_3": "16",
-   "rank_4": "5",
-   "rank_5": "7",
-   "rank_6": "6",
-   "rank_7": "3",
-   "rank_8": "1",
-   "rank_9": "2",
-   "rank_10": "1",
-   "rank_11": "1",
-   "rank_12": "2",
-   "rank_13": null
- },
- {
-   "schemecode": 144315,
-   "schemename": "BANK OF INDIA Midcap Tax Fund Series 2 Direct Plan Growth",
-   "rank_1": "26",
-   "rank_2": "19",
-   "rank_3": "22",
-   "rank_4": "8",
-   "rank_5": "5",
-   "rank_6": "5",
-   "rank_7": "8",
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 120381,
-   "schemename": "ICICI Prudential MidCap Fund - Direct Plan -  Growth",
-   "rank_1": "13",
-   "rank_2": "24",
-   "rank_3": "26",
-   "rank_4": "15",
-   "rank_5": "15",
-   "rank_6": "14",
-   "rank_7": "13",
-   "rank_8": "9",
-   "rank_9": "9",
-   "rank_10": "8",
-   "rank_11": "7",
-   "rank_12": "3",
-   "rank_13": null
- },
- {
-   "schemecode": 119178,
-   "schemename": "Tata Mid Cap Fund - Direct Plan- Growth Option",
-   "rank_1": "14",
-   "rank_2": "21",
-   "rank_3": "25",
-   "rank_4": "12",
-   "rank_5": "13",
-   "rank_6": "12",
-   "rank_7": "10",
-   "rank_8": "7",
-   "rank_9": "7",
-   "rank_10": "4",
-   "rank_11": "3",
-   "rank_12": "4",
-   "rank_13": null
- },
- {
-   "schemecode": 153000,
-   "schemename": "Baroda BNP Paribas Nifty Midcap 150 Index Fund - Direct Plan - Growth Option",
-   "rank_1": "36",
-   "rank_2": null,
-   "rank_3": null,
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 153089,
-   "schemename": "UTI Nifty Midcap 150 Index Fund - Direct Plan - Growth Option",
-   "rank_1": "37",
-   "rank_2": null,
-   "rank_3": null,
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 152767,
-   "schemename": "KOTAK NIFTY MIDCAP 50 INDEX FUND-DIRECT PLAN- GROWTH",
-   "rank_1": "38",
-   "rank_2": null,
-   "rank_3": null,
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 152855,
-   "schemename": "Bandhan Nifty Midcap 150 Index Fund-Direct Plan-Growth",
-   "rank_1": "39",
-   "rank_2": null,
-   "rank_3": null,
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 152916,
-   "schemename": "Kotak Nifty Midcap 150 Momentum 50 Index Fund-Direct Plan-Growth",
-   "rank_1": "40",
-   "rank_2": null,
-   "rank_3": null,
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 120505,
-   "schemename": "Axis Midcap Fund - Direct Plan - Growth",
-   "rank_1": "21",
-   "rank_2": "27",
-   "rank_3": "28",
-   "rank_4": "14",
-   "rank_5": "12",
-   "rank_6": "10",
-   "rank_7": "6",
-   "rank_8": "4",
-   "rank_9": "5",
-   "rank_10": "6",
-   "rank_11": "6",
-   "rank_12": "5",
-   "rank_13": null
- },
- {
-   "schemecode": 141950,
-   "schemename": "BANK OF INDIA Mid Cap Tax Fund Series 1 Direct Plan Growth",
-   "rank_1": "32",
-   "rank_2": "26",
-   "rank_3": "21",
-   "rank_4": "9",
-   "rank_5": "6",
-   "rank_6": "4",
-   "rank_7": "12",
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 118668,
-   "schemename": "Nippon India Growth Mid Cap Fund - Direct Plan Growth Plan - Growth Option",
-   "rank_1": "22",
-   "rank_2": "25",
-   "rank_3": "24",
-   "rank_4": "10",
-   "rank_5": "11",
-   "rank_6": "11",
-   "rank_7": "9",
-   "rank_8": "6",
-   "rank_9": "6",
-   "rank_10": "5",
-   "rank_11": "5",
-   "rank_12": "6",
-   "rank_13": null
- },
- {
-   "schemecode": 127042,
-   "schemename": "Motilal Oswal Midcap Fund-Direct Plan-Growth Option",
-   "rank_1": "20",
-   "rank_2": "23",
-   "rank_3": "18",
-   "rank_4": "6",
-   "rank_5": "9",
-   "rank_6": "9",
-   "rank_7": "5",
-   "rank_8": "5",
-   "rank_9": "4",
-   "rank_10": "3",
-   "rank_11": "4",
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 140228,
-   "schemename": "Edelweiss Mid Cap Fund - Direct Plan - Growth Option",
-   "rank_1": "19",
-   "rank_2": "20",
-   "rank_3": "13",
-   "rank_4": "4",
-   "rank_5": "4",
-   "rank_6": "3",
-   "rank_7": "1",
-   "rank_8": "2",
-   "rank_9": "1",
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 148807,
-   "schemename": "Aditya Birla Sun Life Nifty Midcap 150 Index Fund-Direct Growth",
-   "rank_1": "28",
-   "rank_2": "13",
-   "rank_3": "9",
-   "rank_4": "16",
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 148726,
-   "schemename": "Nippon India Nifty Midcap 150 Index Fund - Direct Plan - Growth Option",
-   "rank_1": "30",
-   "rank_2": "16",
-   "rank_3": "10",
-   "rank_4": "17",
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 152002,
-   "schemename": "LIC MF Mid Cap Fund-Direct Plan-Growth",
-   "rank_1": "34",
-   "rank_2": "34",
-   "rank_3": null,
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 150584,
-   "schemename": "WhiteOak Capital Mid Cap Fund Direct Plan Growth",
-   "rank_1": "2",
-   "rank_2": "1",
-   "rank_3": "1",
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 149936,
-   "schemename": "Axis Nifty Midcap 50 Index Fund - Direct Plan - Growth Option",
-   "rank_1": "7",
-   "rank_2": "2",
-   "rank_3": "4",
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- },
- {
-   "schemecode": 150815,
-   "schemename": "JM Midcap Fund (Direct) - Growth",
-   "rank_1": "1",
-   "rank_2": "3",
-   "rank_3": "6",
-   "rank_4": null,
-   "rank_5": null,
-   "rank_6": null,
-   "rank_7": null,
-   "rank_8": null,
-   "rank_9": null,
-   "rank_10": null,
-   "rank_11": null,
-   "rank_12": null,
-   "rank_13": null
- }
-]
+{
+  "Numofyears": [
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+  ],
+  "Performance": {
+    "2013": [
+      {
+        "119775": "12"
+      },
+      {
+        "119071": "9"
+      },
+      {
+        "118533": "2"
+      },
+      {
+        "120505": "7"
+      },
+      {
+        "119716": "1"
+      },
+      {
+        "125307": "8"
+      },
+      {
+        "120381": "4"
+      },
+      {
+        "119581": "6"
+      },
+      {
+        "118872": "10"
+      },
+      {
+        "118668": "11"
+      },
+      {
+        "120403": "5"
+      },
+      {
+        "119178": "3"
+      }
+    ],
+    "2014": [
+      {
+        "119775": "1"
+      },
+      {
+        "119071": "10"
+      },
+      {
+        "118533": "4"
+      },
+      {
+        "120505": "6"
+      },
+      {
+        "119716": "9"
+      },
+      {
+        "125307": "13"
+      },
+      {
+        "127042": "7"
+      },
+      {
+        "120381": "2"
+      },
+      {
+        "119581": "8"
+      },
+      {
+        "118872": "11"
+      },
+      {
+        "118668": "12"
+      },
+      {
+        "120403": "5"
+      },
+      {
+        "119178": "3"
+      }
+    ],
+    "2015": [
+      {
+        "119775": "5"
+      },
+      {
+        "119071": "10"
+      },
+      {
+        "118533": "8"
+      },
+      {
+        "120505": "13"
+      },
+      {
+        "119716": "2"
+      },
+      {
+        "125307": "9"
+      },
+      {
+        "127042": "1"
+      },
+      {
+        "120381": "12"
+      },
+      {
+        "119581": "3"
+      },
+      {
+        "118872": "7"
+      },
+      {
+        "118668": "11"
+      },
+      {
+        "120403": "6"
+      },
+      {
+        "119178": "4"
+      }
+    ],
+    "2016": [
+      {
+        "119775": "1"
+      },
+      {
+        "119071": "3"
+      },
+      {
+        "118533": "4"
+      },
+      {
+        "120505": "14"
+      },
+      {
+        "119716": "5"
+      },
+      {
+        "125307": "12"
+      },
+      {
+        "127042": "6"
+      },
+      {
+        "120381": "7"
+      },
+      {
+        "140228": "11"
+      },
+      {
+        "119581": "2"
+      },
+      {
+        "118872": "9"
+      },
+      {
+        "118668": "8"
+      },
+      {
+        "120403": "10"
+      },
+      {
+        "119178": "13"
+      }
+    ],
+    "2017": [
+      {
+        "119775": "6"
+      },
+      {
+        "119071": "11"
+      },
+      {
+        "118533": "10"
+      },
+      {
+        "120505": "8"
+      },
+      {
+        "119716": "13"
+      },
+      {
+        "125307": "12"
+      },
+      {
+        "127042": "14"
+      },
+      {
+        "120381": "7"
+      },
+      {
+        "140228": "1"
+      },
+      {
+        "119581": "9"
+      },
+      {
+        "118872": "4"
+      },
+      {
+        "118668": "5"
+      },
+      {
+        "120403": "3"
+      },
+      {
+        "119178": "2"
+      }
+    ],
+    "2018": [
+      {
+        "119775": "9"
+      },
+      {
+        "119071": "7"
+      },
+      {
+        "118533": "6"
+      },
+      {
+        "142110": "3"
+      },
+      {
+        "120505": "2"
+      },
+      {
+        "144315": "1"
+      },
+      {
+        "119716": "17"
+      },
+      {
+        "125307": "13"
+      },
+      {
+        "127042": "11"
+      },
+      {
+        "120381": "8"
+      },
+      {
+        "140228": "15"
+      },
+      {
+        "119581": "14"
+      },
+      {
+        "118872": "5"
+      },
+      {
+        "141950": "16"
+      },
+      {
+        "118668": "10"
+      },
+      {
+        "120403": "4"
+      },
+      {
+        "119178": "12"
+      }
+    ],
+    "2019": [
+      {
+        "119775": "5"
+      },
+      {
+        "119071": "4"
+      },
+      {
+        "118533": "14"
+      },
+      {
+        "142110": "9"
+      },
+      {
+        "120505": "2"
+      },
+      {
+        "144315": "6"
+      },
+      {
+        "119716": "16"
+      },
+      {
+        "125307": "13"
+      },
+      {
+        "127042": "3"
+      },
+      {
+        "120381": "17"
+      },
+      {
+        "147445": "1"
+      },
+      {
+        "140228": "11"
+      },
+      {
+        "119581": "18"
+      },
+      {
+        "118872": "15"
+      },
+      {
+        "141950": "7"
+      },
+      {
+        "118668": "10"
+      },
+      {
+        "120403": "12"
+      },
+      {
+        "119178": "8"
+      }
+    ],
+    "2020": [
+      {
+        "119775": "13"
+      },
+      {
+        "119071": "12"
+      },
+      {
+        "118533": "17"
+      },
+      {
+        "142110": "15"
+      },
+      {
+        "120505": "7"
+      },
+      {
+        "144315": "5"
+      },
+      {
+        "119716": "4"
+      },
+      {
+        "125307": "2"
+      },
+      {
+        "127042": "19"
+      },
+      {
+        "120381": "16"
+      },
+      {
+        "147445": "10"
+      },
+      {
+        "140228": "6"
+      },
+      {
+        "119581": "18"
+      },
+      {
+        "118872": "9"
+      },
+      {
+        "141950": "3"
+      },
+      {
+        "118668": "14"
+      },
+      {
+        "120403": "8"
+      },
+      {
+        "119178": "11"
+      },
+      {
+        "148073": "1"
+      }
+    ],
+    "2021": [
+      {
+        "119775": "9"
+      },
+      {
+        "149389": "23"
+      },
+      {
+        "119071": "20"
+      },
+      {
+        "118533": "17"
+      },
+      {
+        "142110": "5"
+      },
+      {
+        "120505": "14"
+      },
+      {
+        "144315": "11"
+      },
+      {
+        "148807": "21"
+      },
+      {
+        "119716": "4"
+      },
+      {
+        "125307": "1"
+      },
+      {
+        "127042": "2"
+      },
+      {
+        "120381": "13"
+      },
+      {
+        "147445": "8"
+      },
+      {
+        "140228": "6"
+      },
+      {
+        "119581": "16"
+      },
+      {
+        "118872": "19"
+      },
+      {
+        "141950": "7"
+      },
+      {
+        "118668": "10"
+      },
+      {
+        "120403": "12"
+      },
+      {
+        "119178": "15"
+      },
+      {
+        "148733": "22"
+      },
+      {
+        "148726": "18"
+      },
+      {
+        "148073": "3"
+      }
+    ],
+    "2022": [
+      {
+        "150313": "30"
+      },
+      {
+        "119775": "6"
+      },
+      {
+        "149389": "17"
+      },
+      {
+        "119071": "31"
+      },
+      {
+        "118533": "18"
+      },
+      {
+        "142110": "22"
+      },
+      {
+        "150673": "14"
+      },
+      {
+        "150815": "23"
+      },
+      {
+        "120505": "29"
+      },
+      {
+        "144315": "33"
+      },
+      {
+        "148807": "15"
+      },
+      {
+        "150902": "32"
+      },
+      {
+        "119716": "13"
+      },
+      {
+        "125307": "24"
+      },
+      {
+        "127042": "2"
+      },
+      {
+        "149892": "1"
+      },
+      {
+        "120381": "11"
+      },
+      {
+        "147445": "8"
+      },
+      {
+        "149936": "4"
+      },
+      {
+        "140228": "10"
+      },
+      {
+        "119581": "9"
+      },
+      {
+        "118872": "5"
+      },
+      {
+        "141950": "34"
+      },
+      {
+        "151036": "26"
+      },
+      {
+        "118668": "7"
+      },
+      {
+        "120403": "19"
+      },
+      {
+        "119178": "20"
+      },
+      {
+        "148733": "12"
+      },
+      {
+        "150584": "21"
+      },
+      {
+        "150817": "25"
+      },
+      {
+        "148726": "16"
+      },
+      {
+        "150212": "3"
+      },
+      {
+        "148073": "27"
+      },
+      {
+        "150428": "28"
+      }
+    ],
+    "2023": [
+      {
+        "150313": "33"
+      },
+      {
+        "119775": "30"
+      },
+      {
+        "149389": "12"
+      },
+      {
+        "119071": "18"
+      },
+      {
+        "118533": "20"
+      },
+      {
+        "142110": "4"
+      },
+      {
+        "150673": "10"
+      },
+      {
+        "150815": "5"
+      },
+      {
+        "120505": "31"
+      },
+      {
+        "144315": "26"
+      },
+      {
+        "148807": "8"
+      },
+      {
+        "150902": "1"
+      },
+      {
+        "119716": "21"
+      },
+      {
+        "125307": "34"
+      },
+      {
+        "127042": "11"
+      },
+      {
+        "149892": "13"
+      },
+      {
+        "120381": "29"
+      },
+      {
+        "147445": "22"
+      },
+      {
+        "149936": "2"
+      },
+      {
+        "140228": "17"
+      },
+      {
+        "119581": "16"
+      },
+      {
+        "118872": "19"
+      },
+      {
+        "141950": "28"
+      },
+      {
+        "152002": "35"
+      },
+      {
+        "151036": "15"
+      },
+      {
+        "118668": "3"
+      },
+      {
+        "120403": "23"
+      },
+      {
+        "119178": "14"
+      },
+      {
+        "148733": "7"
+      },
+      {
+        "150584": "6"
+      },
+      {
+        "150817": "27"
+      },
+      {
+        "148726": "9"
+      },
+      {
+        "150212": "24"
+      },
+      {
+        "148073": "25"
+      },
+      {
+        "150428": "32"
+      }
+    ],
+    "2024": [
+      {
+        "150313": "33"
+      },
+      {
+        "119775": "7"
+      },
+      {
+        "149389": "26"
+      },
+      {
+        "119071": "22"
+      },
+      {
+        "153000": "37"
+      },
+      {
+        "118533": "8"
+      },
+      {
+        "142110": "16"
+      },
+      {
+        "150673": "24"
+      },
+      {
+        "150815": "5"
+      },
+      {
+        "120505": "10"
+      },
+      {
+        "152916": "39"
+      },
+      {
+        "144315": "34"
+      },
+      {
+        "148807": "20"
+      },
+      {
+        "150902": "12"
+      },
+      {
+        "119716": "28"
+      },
+      {
+        "125307": "27"
+      },
+      {
+        "127042": "1"
+      },
+      {
+        "149892": "23"
+      },
+      {
+        "153089": "36"
+      },
+      {
+        "120381": "18"
+      },
+      {
+        "147445": "30"
+      },
+      {
+        "149936": "29"
+      },
+      {
+        "140228": "4"
+      },
+      {
+        "119581": "9"
+      },
+      {
+        "118872": "35"
+      },
+      {
+        "152855": "40"
+      },
+      {
+        "152767": "38"
+      },
+      {
+        "141950": "31"
+      },
+      {
+        "152002": "15"
+      },
+      {
+        "151036": "3"
+      },
+      {
+        "118668": "19"
+      },
+      {
+        "120403": "2"
+      },
+      {
+        "119178": "21"
+      },
+      {
+        "148733": "11"
+      },
+      {
+        "150584": "6"
+      },
+      {
+        "150817": "17"
+      },
+      {
+        "148726": "25"
+      },
+      {
+        "150212": "14"
+      },
+      {
+        "148073": "13"
+      },
+      {
+        "150428": "32"
+      }
+    ],
+    "2025": [
+      {
+        "150313": "40"
+      },
+      {
+        "119775": "27"
+      },
+      {
+        "149389": "13"
+      },
+      {
+        "119071": "28"
+      },
+      {
+        "153000": "14"
+      },
+      {
+        "118533": "29"
+      },
+      {
+        "142110": "30"
+      },
+      {
+        "153728": "41"
+      },
+      {
+        "150673": "15"
+      },
+      {
+        "150815": "42"
+      },
+      {
+        "120505": "31"
+      },
+      {
+        "152916": "43"
+      },
+      {
+        "144315": "32"
+      },
+      {
+        "148807": "16"
+      },
+      {
+        "150902": "44"
+      },
+      {
+        "119716": "33"
+      },
+      {
+        "153326": "1"
+      },
+      {
+        "125307": "34"
+      },
+      {
+        "153401": "2"
+      },
+      {
+        "127042": "45"
+      },
+      {
+        "149892": "17"
+      },
+      {
+        "153089": "18"
+      },
+      {
+        "120381": "3"
+      },
+      {
+        "147445": "4"
+      },
+      {
+        "149936": "5"
+      },
+      {
+        "140228": "19"
+      },
+      {
+        "119581": "20"
+      },
+      {
+        "118872": "35"
+      },
+      {
+        "152855": "21"
+      },
+      {
+        "152767": "6"
+      },
+      {
+        "141950": "36"
+      },
+      {
+        "152002": "37"
+      },
+      {
+        "151036": "38"
+      },
+      {
+        "118668": "22"
+      },
+      {
+        "120403": "7"
+      },
+      {
+        "119178": "8"
+      },
+      {
+        "148733": "9"
+      },
+      {
+        "150584": "10"
+      },
+      {
+        "150817": "11"
+      },
+      {
+        "148726": "12"
+      },
+      {
+        "153788": "23"
+      },
+      {
+        "150212": "24"
+      },
+      {
+        "148073": "25"
+      },
+      {
+        "153581": "26"
+      },
+      {
+        "150428": "39"
+      }
+    ]
+  }
+}
