@@ -14,7 +14,7 @@
     "2024",
     "2025"
   ],
-    "Funddetail": [
+  "Funddetail": [
   { "153738": "CAPITALMIND FLEXI CAP FUND DIRECT GROWTH" },
   { "118535": "Franklin India Flexi Cap Fund - Direct - Growth" },
   { "119292": "Union Flexi Cap Fund - Direct Plan - Growth Option" },
@@ -52,8 +52,8 @@
   { "149450": "Samco Flexi Cap Fund - Direct Plan - Growth Option" },
   { "119076": "DSP Flexi Cap Fund - Direct Plan - Growth" },
   { "150346": "WhiteOak Capital Flexi Cap Fund Direct Plan-Growth" },
-  { "151379": "ITI Flexi Cap Fund- Direct Plan- Growth"
-],
+  { "151379": "ITI Flexi Cap Fund- Direct Plan- Growth" }
+ ],
   "Performance": {
     "2013": [
       {
