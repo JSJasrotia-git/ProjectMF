@@ -15,130 +15,45 @@
     "2025"
   ],
     "Funddetail": [
-    {
-      "151130": "HSBC Small Cap Fund - Direct Growth"
-    },
-    {
-      "148815": "Aditya Birla Sun Life Nifty Smallcap 50 Index Fund-Direct Growth"
-    },
-    {
-      "145206": "Tata Small Cap Fund-Direct Plan-Growth"
-    },
-    {
-      "152243": "DSP Nifty Smallcap250 Quality 50 Index Fund - Direct - Growth"
-    },
-    {
-      "152004": "LIC MF Small Cap Fund-Direct Plan-Growth"
-    },
-    {
-      "153196": "Mirae Asset Small Cap Fund - Direct Plan - Growth"
-    },
-    {
-      "149894": "Axis Nifty Smallcap 50 Index Fund - Direct Plan - Growth Option"
-    },
-    {
-      "153223": "Kotak Nifty SmallCap 250 Index Fund- Direct - Growth"
-    },
-    {
-      "152459": "Mirae Asset Nifty Smallcap 250 Momentum Quality 100 ETF Fund of Fund - Direct Plan - Growth"
-    },
-    {
-      "152107": "QUANTUM SMALL CAP FUND - DIRECT PLAN GROWTH OPTION"
-    },
-    {
-      "119589": "Sundaram Small Cap Fund Direct Plan - Growth"
-    },
-    {
-      "149019": "PGIM India Small Cap Fund - Direct Plan- Growth Option"
-    },
-    {
-      "120591": "ICICI Prudential Smallcap Fund - Direct Plan - Growth"
-    },
-    {
-      "152939": "TRUSTMF SMALL CAP FUND -DIRECT PLAN-GROWTH"
-    },
-    {
-      "147946": "BANDHAN SMALL CAP FUND - DIRECT PLAN GROWTH"
-    },
-    {
-      "125354": "Axis Small Cap Fund - Direct Plan - Growth"
-    },
-    {
-      "146196": "Edelweiss Small Cap Fund - Direct Plan - Growth"
-    },
-    {
-      "129649": "Union Small Cap Fund - Direct Plan - Growth Option"
-    },
-    {
-      "118778": "Nippon India Small Cap Fund - Direct Plan Growth Plan - Growth Option"
-    },
-    {
-      "150915": "Mahindra Manulife Small Cap Fund - Direct Plan - Growth"
-    },
-    {
-      "118777": "Nippon India Small Cap Fund - Direct Plan Growth Plan - Bonus Option"
-    },
-    {
-      "148618": "UTI Small Cap Fund - Direct Plan - Growth Option"
-    },
-    {
-      "153790": "JioBlackRock Nifty Smallcap 250 Index Fund - Direct Plan - Growth Option"
-    },
-    {
-      "125497": "SBI Small Cap Fund - Direct Plan - Growth"
-    },
-    {
-      "145137": "Invesco India Smallcap Fund - Direct Plan - Growth"
-    },
-    {
-      "152237": "Motilal Oswal Small Cap Fund - Direct - Growth"
-    },
-    {
-      "152128": "Baroda BNP Paribas Small Cap Fund - Direct Plan - Growth option"
-    },
-    {
-      "119212": "DSP Small Cap Fund - Direct Plan - Growth"
-    },
-    {
-      "147919": "ITI Small Cap Fund - Direct Plan - Growth Option"
-    },
-    {
-      "153612": "BAJAJ FINSERV SMALL CAP FUND - DIRECT - GROWTH"
-    },
-    {
-      "152431": "Groww Nifty Smallcap 250 Index Fund - Direct Plan - Growth"
-    },
-    {
-      "150892": "Edelweiss Nifty Smallcap 250 Index Fund - Direct Plan - Growth"
-    },
-    {
-      "150677": "SBI Nifty Smallcap 250 Index Fund - Direct Plan - Growth"
-    },
-    {
-      "149283": "ICICI Prudential Nifty Smallcap 250 Index Fund - Direct Plan - Growth"
-    },
-    {
-      "152264": "BANDHAN Nifty Smallcap 250 Index Fund - Direct Plan - Growth"
-    },
-    {
-      "146130": "CANARA ROBECO SMALL CAP FUND - DIRECT PLAN - GROWTH OPTION"
-    },
-    {
-      "151649": "Kotak Nifty Smallcap 50 Index Fund - Direct Plan - Growth"
-    },
-    {
-      "148519": "Nippon India Nifty Smallcap 250 Index Fund - Direct Plan - Growth Option"
-    },
-    {
-      "152614": "JM Small Cap Fund (Direct) - Growth Option"
-    },
-    {
-      "145678": "BANK OF INDIA Small Cap Fund Direct Plan Growth"
-    },
-    {
-      "118525": "Franklin India Small Cap Fund - Direct - Growth"
-    }
-  ],
+  { "153738": "CAPITALMIND FLEXI CAP FUND DIRECT GROWTH" },
+  { "118535": "Franklin India Flexi Cap Fund - Direct - Growth" },
+  { "119292": "Union Flexi Cap Fund - Direct Plan - Growth Option" },
+  { "149094": "Nippon India Flexi Cap Fund - Direct Plan - Growth Plan - Growth Option" },
+  { "153543": "Unifi Flexi Cap Fund - Direct Growth" },
+  { "153801": "DSP Nifty500 Flexicap Quality 30 Index Fund - Direct - Growth" },
+  { "120264": "LIC MF Flexi Cap Fund-Direct Plan-Growth" },
+  { "151796": "360 ONE FLEXICAP FUND-DIRECT PLAN- GROWTH" },
+  { "144546": "Tata Flexi Cap Fund-Direct Plan-Growth" },
+  { "150387": "Baroda BNP Paribas Flexi Cap Fund - Direct Plan - Growth Option" },
+  { "141925": "Axis Flexi Cap Fund - Direct Plan - Growth" },
+  { "120046": "HSBC Flexi Cap Fund - Direct Growth" },
+  { "151412": "Mirae Asset Flexi Cap Fund - Direct Plan - Growth" },
+  { "148990": "ICICI Prudential Flexicap Fund - Direct Plan - Growth" },
+  { "118424": "BANDHAN Flexi Cap Fund-Direct Plan-Growth" },
+  { "122639": "Parag Parikh Flexi Cap Fund - Direct Plan - Growth" },
+  { "118275": "CANARA ROBECO FLEXICAP FUND - DIRECT PLAN - GROWTH OPTION" },
+  { "148404": "BANK OF INDIA Flexi Cap Fund Direct Plan -Growth" },
+  { "150571": "Sundaram Flexicap Fund Direct Growth" },
+  { "149104": "Mahindra Manulife Flexi Cap Fund - Direct Plan -Growth" },
+  { "149763": "Invesco India Flexi Cap Fund - Direct Plan - Growth" },
+  { "151917": "NJ Flexi Cap Fund - Direct Plan - Growth Option" },
+  { "118883": "Taurus Flexi Cap Fund - Direct Plan - Growth" },
+  { "151895": "Bajaj Finserv Flexi Cap Fund-Direct Plan-Growth" },
+  { "152584": "TRUSTMF Flexi Cap Fund-Direct Plan- Growth" },
+  { "144905": "Shriram Flexi Cap Fund - Direct Growth" },
+  { "152135": "Helios Flexi Cap Fund - Direct Plan - Growth Option" },
+  { "140353": "Edelweiss Flexi Cap Fund - Direct Plan - Growth Option" },
+  { "129046": "Motilal Oswal Flexi cap Fund Direct Plan-Growth Option" },
+  { "148642": "Nippon India Diversified Equity Flexicap Passive FoF - Direct Plan - Growth Option" },
+  { "143793": "Navi Flexi Cap Fund - Direct Plan - Growth" },
+  { "119718": "SBI Flexicap Fund - DIRECT PLAN - Growth Option" },
+  { "133839": "PGIM India Flexi Cap Fund - Direct Plan - Growth Option" },
+  { "120492": "JM Flexicap Fund (Direct) - Growth Option" },
+  { "149450": "Samco Flexi Cap Fund - Direct Plan - Growth Option" },
+  { "119076": "DSP Flexi Cap Fund - Direct Plan - Growth" },
+  { "150346": "WhiteOak Capital Flexi Cap Fund Direct Plan-Growth" },
+  { "151379": "ITI Flexi Cap Fund- Direct Plan- Growth"
+],
   "Performance": {
     "2013": [
       {
